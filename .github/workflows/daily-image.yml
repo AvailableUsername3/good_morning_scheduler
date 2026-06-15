@@ -2,7 +2,7 @@ name: Daily Discord Image
 
 on:
   schedule:
-    - cron: '59 23 * * *'
+    - cron: '0 11 * * *'
   workflow_dispatch:  # ← Add this line, it enables the manual run button
 
 jobs:
@@ -14,11 +14,11 @@ jobs:
           curl -X POST "${{ secrets.DISCORD_WEBHOOK }}" \
             -H "Content-Type: application/json" \
             -d '{
-              "username": "Sleeper",
+              "username": "Waker",
               "embeds": [{
-                "title": "Goodnight.",
+                "title": "Goodmorning.",
                 "image": {
-                  "url": "https://cdn.discordapp.com/attachments/1152319221523550298/1513757047022162030/bd4cf5f4b97d4370d444682204f920aa.png?ex=6a28e39c&is=6a27921c&hm=f1f6847e3362e00748ca9dc5fd34cfe3d064f10a7a20e640e2879dfa920ed9b3&"
+                  "url": "https://cdn.discordapp.com/attachments/1482807222210662453/1515925622877192252/IMG_4990.jpg?ex=6a30c741&is=6a2f75c1&hm=1edb48dd09a1d56c6522a41c7a4d286dd8c0079105c536b2ed3628d2becb1f92&"
                 }
               }]
             }'
