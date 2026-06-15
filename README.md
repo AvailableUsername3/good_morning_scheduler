@@ -1,4 +1,4 @@
-# good_night_schedule
+# good_morning_scheduler
 What does it do?
 * Uploads a scheduled image at a given time
-* Convinces and Motivates people to go to sleep at the proper time
+* Convinces and Motivates people to go to wake up at the proper time
